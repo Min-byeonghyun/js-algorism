@@ -10,7 +10,7 @@ function solution(s) {
       stack.push(char);
     }
   }
-  return stack.join("")
+  return stack.join()
 }
 console.log(solution("infFflearn"));
 console.log(solution("aAbBcC"));

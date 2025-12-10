@@ -18,7 +18,7 @@ class Queue {
       this.first = newNode;
       this.last = newNode;
     } else {
-      const oldLast = this.last;   //  oldlast = value: a next :{ value : b next : null}
+      const oldLast = this.last; 
       oldLast.next = newNode;
       this.last = newNode;
     }

@@ -1,18 +1,22 @@
-
-
 function insertionSort(array) {
-  const n = array.length;
+ let n = array.length;
+                   
+ for(let i = 1; i < n; i++) {
+  let current = array[i];
+  let j = i - 1;
 
-  for(let i = 1; i < n; i++) {
-    let current = array[i];
-    let j = i - 1;      
-
-    while(j >=0 && array[j] > current) {
-      array[j+1] = array[j];
-      j--
-    }
-    array[j + 1] = current;
+  while(j >= 0 && array[j] > current) {
+    array[j+1] = array[j];
+    j--
   }
+  array[j + 1] = current;
 
-  return array;
+ }
+ return array;
 }
+ 
+console.log(insertionSort([6, 2, 10, 29, 13, 50]));
+
+
+
+

@@ -29,4 +29,4 @@ function quickSort(array, left = 0, right = array.length - 1) {
   return array;
 }
 
-console.log(quickSort([5, 3, 4, 9, 7, 2, 1, 6, 8]));
+console.log(quickSort([5,3,4,6,7,8,1,9,2]))

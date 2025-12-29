@@ -5,6 +5,7 @@ function solution(target, arr) {
 
   while (start <= end) {
     let mid = Math.floor((start + end) / 2);
+
     if (target === arr[mid]) {
       answer = mid;
       break;
@@ -14,9 +15,7 @@ function solution(target, arr) {
       start = mid + 1;
     }
   }
-
   return answer;
 }
 
-
-console.log(solution(32, [1,2,32,44,67,89]))
+console.log(solution(32, [1, 2, 32, 44, 67, 89]));

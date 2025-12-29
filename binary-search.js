@@ -19,3 +19,4 @@ function solution(target, arr) {
 }
 
 console.log(solution(32, [1, 2, 32, 44, 67, 89]));
+

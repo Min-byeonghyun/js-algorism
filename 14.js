@@ -5,22 +5,23 @@ function solution(n, stations) {
   let visited = Array.from({ length: n }, () => 0);
 
   function dfs(station) {
-    visited[station] = 1; 
-  
-    for(let i=0; i <n; i++) {     // [1,0,1]
-      if(stations[station] [i] === 1 && visited[i] === 0) {
-        dfs(i)
+    visited[station] = 1;
+
+    for (let i = 0; i < n; i++) {
+      // [1,0,1]
+      if (stations[station][i] === 1 && visited[i] === 0) {
+        dfs(i);
       }
     }
   }
 
-  for(let i=0; i < n; i++) {
-    if(visited[i] === 0) {
+  for (let i = 0; i < n; i++) {
+    if (visited[i] === 0) {
       dfs(i);
       answer++;
-    }  
+    }
   }
-  return answer
+  return answer;
 }
 
 console.log(
@@ -32,7 +33,7 @@ console.log(
 );
 console.log(
   solution(4, [
-    [1, 1, 1, 0],  
+    [1, 1, 1, 0],
     [1, 1, 0, 0],
     [1, 0, 1, 1],
     [0, 0, 1, 1],
